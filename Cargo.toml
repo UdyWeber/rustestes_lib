@@ -1,0 +1,22 @@
+[package]
+name = "rustestes_lib"
+version = "0.3.0"
+edition = "2021"
+description = "Test Rust Lib with WASM"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# cargo wapm to release the next version
+[lib]
+# Need to specify CDYLIB in order to get a .wasm file
+crate-type = ["cdylib", "rlib"]
+
+[package.metadata.wapm]
+# Your WAPM username
+namespace = "udyweber"
+abi = "none"
+# Always have to change to wai-version to update the package we are creating
+bindings = { wai-version = "0.1.0", exports = "rustestest_lib.wai"}
+
+[dependencies]
+wai-bindgen-rust = "0.2.3"

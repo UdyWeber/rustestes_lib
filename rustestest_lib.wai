@@ -1,0 +1,12 @@
+reverse-listestest: func(input-list: list<u32>) -> list<u32>
+say-hi: func() -> string
+
+record programmer {
+    name: string,
+    age: u32,
+    programming-languages: list<string>,
+}
+
+make-programmer: func(name: string, age: u32, programming-languages: list<string>) -> programmer
+introduce-programmer: func(who: programmer) -> string
+high-computation: func(items: list<float32>) -> list<float32>
