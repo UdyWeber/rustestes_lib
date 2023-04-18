@@ -1,9 +1,9 @@
 # rustestes_lib
-------
+-----
 A Library powered by Rust exported via Webassembly to Python using Wasmer and WAPM for studies purposes
 
 ## Getting Started with Wasmer
-------
+-----
 First you'll need to install wasmer in your system by running `curl https://get.wasmer.io -sSfL | sh` in your terminal it will alloy you to use wasmer in your project. Having installed Wasmer, WAPM (Web Assembly Package Manager) will be installed as well, abling you to upload your Rust Lib to WAPM and delivery to other languages. More documentation on: `https://docs.wasmer.io/`
 
 ### WAPM
@@ -11,7 +11,7 @@ First you'll need to install wasmer in your system by running `curl https://get.
 After installing Wasmer and WAPM to your system, go to `https://wapm.io/` and create an account to store your Rust libs as WebAssembly packages.
 
 ## Setting-up your Rust project
-------
+-----
 If you're using Rust you have to have the cargo service in your system, to make things easier! So by typing `cargo new --lib {project_name}` and voilá, cargo will create a new lib.rs and cargo.toml for you to get started. When you create a new lib module using cargo, it will provide you examples of how to implement and test your pieces of code, with great documentation online in the Rust Book.
 
 In order to define your lib's implementations you have to create a `.wai`, the wai file have to be `{lib_name}.wai` where your going to define a interface to your lib methods and also structs, enums, etc... More information on how to build the wai file in the official documentation: `https://github.com/wasmerio/wai`.
