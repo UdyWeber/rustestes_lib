@@ -50,7 +50,6 @@ bindings = { wai-version = "0.1.0", exports = "{lib_name}.wai"}
 ```
 
 ## Lib Code Implementation
------
 Now that we are ready with all the setup, we can jump in to write some code! So in your `lib.rs` file you have to add
 
 ```rust
