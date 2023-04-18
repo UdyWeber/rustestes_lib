@@ -1,10 +1,9 @@
 [package]
 name = "rustestes_lib"
+# Always have to change the version to update the package we are creating
 version = "0.3.0"
 edition = "2021"
 description = "Test Rust Lib with WASM"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 # cargo wapm to release the next version
 [lib]
@@ -15,7 +14,6 @@ crate-type = ["cdylib", "rlib"]
 # Your WAPM username
 namespace = "udyweber"
 abi = "none"
-# Always have to change to wai-version to update the package we are creating
 bindings = { wai-version = "0.1.0", exports = "rustestest_lib.wai"}
 
 [dependencies]
